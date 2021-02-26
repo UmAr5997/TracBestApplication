@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StaticInformationActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/imglogo"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvinformation"
+        android:layout_marginTop="20dp"
+        android:text="User Feedback"
+        android:layout_below="@+id/imglogo"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvstaticinformation"
+        android:layout_below="@+id/tvinformation"
+        android:layout_margin="20dp"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterEmailActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollable"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imglogo"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_margin="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainlayout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/imglogo"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:padding="4dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your email adddress"
+            android:textColorHint="#424040"
+            android:background="@drawable/edt_layout"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btnsubmit"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_corner_layout"/>
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

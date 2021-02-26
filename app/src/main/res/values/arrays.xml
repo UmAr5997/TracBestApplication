@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>Mr.</item>
+        <item>Mrs.</item>
+    </string-array>
+    <string-array name="report" >
+        <item>Report Someone</item>
+        <item>Report Myself</item>
+    </string-array>
+    <string-array name="diagnose">
+        <item>Unconfirmed Text</item>
+        <item>Confirmed Positive</item>
+        <item>Confirmed Negative</item>
+    </string-array>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollable"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imglogo"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_margin="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainlayout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_below="@+id/imglogo"
+        android:background="@color/blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:id="@+id/txtcurrent"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/imgalert"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtcurrent"
+            android:src="@drawable/currentlocationicon"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtrisklow"
+            android:text="Risk Level Low"
+            android:gravity="center"
+            android:layout_below="@+id/imgalert"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:padding="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check-in Location"
+            android:id="@+id/btnchklocation"
+                android:layout_below="@+id/txtrisklow"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_corner_layout"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvscanqrtxt"
+        android:layout_below="@+id/mainlayout"
+        android:text="Scan QR Code to check in"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:padding="4dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvortxt"
+        android:layout_below="@+id/tvscanqrtxt"
+        android:text="or"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:padding="4dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvchecktxt"
+        android:layout_below="@+id/tvortxt"
+        android:text="Check-in Manually"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:padding="4dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imgqrscan"
+        android:gravity="center"
+      android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvchecktxt"
+        android:src="@drawable/qrscan"
+        />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

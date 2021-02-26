@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TracBestApplication</string>
+    <string name="spinner_prompt">spinnertext</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="gps_network_not_enabled">Please Enable GPS for Better Experience</string>
+    <string name="open_location_settings">Turn On</string>
+    <string name="Cancel">Cancel</string>
+</resources>

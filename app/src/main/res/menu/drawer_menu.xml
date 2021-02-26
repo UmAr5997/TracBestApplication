@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_guidelines"
+            android:title="Guidelines"
+            />
+        <item
+            android:id="@+id/nav_faqs"
+            android:title="FAQs" />
+        <item
+            android:id="@+id/nav_broadcast"
+            android:title="Broadcast" />
+        <item
+            android:id="@+id/nav_advice"
+            android:title="Advice" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_contactus"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_termnuse"
+            android:title="Terms and Use" />
+        <item
+            android:id="@+id/nav_privacynotice"
+            android:title="Privacy Notice" />
+        <item
+            android:id="@+id/nav_userfeedback"
+            android:title="User FeedBack" />
+        <item
+            android:id="@+id/nav_signout"
+            android:title="Sign Out" />
+    </group>
+</menu>

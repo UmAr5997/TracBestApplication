@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SearchActivity"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imglogo"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainlayout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_below="@+id/imglogo"
+        android:background="@color/blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/imgcurrentloction"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/currentlocationicon"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Risk Level Low"
+            android:gravity="center"
+            android:textSize="16dp"
+
+            android:textColor="@color/white"
+            android:padding="4dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check-in Location"
+            android:id="@+id/btnchklocation"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_corner_layout"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvscanqrtxt"
+        android:layout_below="@+id/mainlayout"
+        android:text="Search for Venue"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:padding="4dp"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnercategory"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tvscanqrtxt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvpostcode"
+        android:layout_below="@+id/spinnercategory"
+        android:text="Search using Zip/Post Code"
+        android:gravity="left"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:padding="4dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtpostcode"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/tvpostcode"
+        android:layout_below="@+id/spinnercategory"
+        android:padding="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#424040"
+        android:background="@drawable/edt_layout"
+        android:drawablePadding="10dp"
+        android:hint="Zip Code"
+        android:textColor="@color/black"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search for Venue"
+        android:id="@+id/btnsearch"
+        android:shadowColor="@android:color/transparent"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_below="@+id/tvpostcode"
+       android:layout_margin="20dp"
+        android:background="@drawable/button_corner_layout"/>
+
+</RelativeLayout>
